@@ -43,7 +43,7 @@ const RegisterForm = () => {
   return (
     <div className="bg-white px-8 py-10 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 max-w-md w-full mx-4">
       <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Create an Account</h2>
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4" autoComplete="off">
         <div>
           <label className="block text-xs font-normal text-gray-500 mb-2">Full Name</label>
           <input
@@ -63,6 +63,7 @@ const RegisterForm = () => {
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
             required
+            autoComplete="off"
             className="w-full px-4 py-2.5 border border-gray-200 rounded-md text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 transition duration-150 text-sm"
           />
         </div>
@@ -74,6 +75,7 @@ const RegisterForm = () => {
             onChange={(e) => setPassword(e.target.value)}
             placeholder="••••••••"
             required
+            autoComplete="new-password"
             className="w-full px-4 py-2.5 border border-gray-200 rounded-md text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 transition duration-150 text-sm"
           />
         </div>

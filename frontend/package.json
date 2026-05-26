@@ -17,6 +17,7 @@
     "axios": "^1.16.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-qr-code": "^2.0.21",
     "react-redux": "^9.3.0"
   },
   "devDependencies": {
