@@ -20,6 +20,11 @@ const shortUrlSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
 
+    },
+    createdAt: {
+        type: Date,
+        expires: '48h', // The document will be automatically deleted after 48 hours
+        default: Date.now
     }
 });
 
